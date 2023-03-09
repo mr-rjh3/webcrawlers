@@ -1,0 +1,183 @@
+{
+    "researcher_name": "Sara Bragg",
+    "researcher_institution": "UCL Institute of Education",
+    "researcher_keywords": [
+        "Education",
+        "cultural studies",
+        "youth",
+        "sexuality",
+        "gender"
+    ],
+    "researcher_imgURL": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=cXN92j8AAAAJ&citpid=1",
+    "researcher_citations": {
+        "all": "3746",
+        "since2018": "1334"
+    },
+    "researcher_hindex": {
+        "all": "26",
+        "since2018": "17"
+    },
+    "researcher_i10index": {
+        "all": "50",
+        "since2018": "34"
+    },
+    "researcher_coauthors": [
+        {
+            "coauthor_name": "David Buckingham",
+            "coauthor_title": "Emeritus Professor of Communications and Media Studies",
+            "coauthor_link": "/citations?user=r2x2B2IAAAAJ&hl=en"
+        },
+        {
+            "coauthor_name": "Rebekah Willett",
+            "coauthor_title": "Professor, Information School, University of Wisconsin Madison",
+            "coauthor_link": "/citations?user=pjaezdkAAAAJ&hl=en"
+        },
+        {
+            "coauthor_name": "Jessica Ringrose",
+            "coauthor_title": "Professor UCL Institute of Education",
+            "coauthor_link": "/citations?user=BvaEnl8AAAAJ&hl=en"
+        },
+        {
+            "coauthor_name": "Professor EJ Renold",
+            "coauthor_title": "Cardiff University",
+            "coauthor_link": "/citations?user=YL9nFqUAAAAJ&hl=en"
+        },
+        {
+            "coauthor_name": "Rachel Thomson",
+            "coauthor_title": "University sussex",
+            "coauthor_link": "/citations?user=1hZ44wwAAAAJ&hl=en"
+        },
+        {
+            "coauthor_name": "Alan Mckee",
+            "coauthor_title": "University of Sydney",
+            "coauthor_link": "/citations?user=R7MvygIAAAAJ&hl=en"
+        },
+        {
+            "coauthor_name": "Dorothy Faulkner",
+            "coauthor_title": "Senior lecturer in Developmental Psychology, The Open University",
+            "coauthor_link": "/citations?user=TOTfDS0AAAAJ&hl=en"
+        }
+    ],
+    "researcher_papers": [
+        {
+            "paper_title": "Young people, sex and the media: The facts of life?",
+            "paper_authors": "D Buckingham, S Bragg",
+            "paper_citedby": "490",
+            "paper_year": "2003"
+        },
+        {
+            "paper_title": "Students as researchers",
+            "paper_authors": "M Fielding, S Bragg",
+            "paper_citedby": "468",
+            "paper_year": "2003"
+        },
+        {
+            "paper_title": "\u201cStudent voice\u201d and governmentality: The production of enterprising subjects?",
+            "paper_authors": "S Bragg",
+            "paper_citedby": "390",
+            "paper_year": "2007"
+        },
+        {
+            "paper_title": "Factors influencing the transfer of good practice",
+            "paper_authors": "M Fielding, S Bragg, J Craig, IAN Cunningham, M Eraut, S Gillinson, ...",
+            "paper_citedby": "238",
+            "paper_year": "2005"
+        },
+        {
+            "paper_title": "\u2018More than boy, girl, male, female\u2019: Exploring young people\u2019s views on gender diversity within and beyond school contexts",
+            "paper_authors": "S Bragg, E Renold, J Ringrose, C Jackson",
+            "paper_citedby": "173",
+            "paper_year": "2018"
+        },
+        {
+            "paper_title": "\u2018But I listen to children anyway!\u2019\u2014teacher perspectives on pupil voice",
+            "paper_authors": "S Bragg",
+            "paper_citedby": "125",
+            "paper_year": "2007"
+        },
+        {
+            "paper_title": "Taking a joke: Learning from the voices we don't want to hear",
+            "paper_authors": "S Bragg",
+            "paper_citedby": "125",
+            "paper_year": "2001"
+        },
+        {
+            "paper_title": "Too much, too soon? Children,\u2018sexualization\u2019and consumer culture",
+            "paper_authors": "S Bragg, D Buckingham, R Russell, R Willett",
+            "paper_citedby": "121",
+            "paper_year": "2011"
+        },
+        {
+            "paper_title": "Consulting young people",
+            "paper_authors": "S Bragg",
+            "paper_citedby": "114",
+            "paper_year": "2007"
+        },
+        {
+            "paper_title": "\u2018Scrapbooks\u2019 as a resource in media research with young people",
+            "paper_authors": "S Bragg, D Buckingham",
+            "paper_citedby": "100",
+            "paper_year": "2009"
+        },
+        {
+            "paper_title": "\u201cIt\u2019s not about systems, it\u2019s about relationships\u201d: Building a listening culture in a primary school",
+            "paper_authors": "S Bragg",
+            "paper_citedby": "77",
+            "paper_year": "2007"
+        },
+        {
+            "paper_title": "Too much too young? Young people, sexual media and learning",
+            "paper_authors": "S Bragg, D Buckingham",
+            "paper_citedby": "74",
+            "paper_year": "2009"
+        },
+        {
+            "paper_title": "Researching everyday childhoods: Time, technology and documentation in a digital age",
+            "paper_authors": "R Thomson, L Berriman, S Bragg",
+            "paper_citedby": "69",
+            "paper_year": "2018"
+        },
+        {
+            "paper_title": "Young people, media and personal relationships",
+            "paper_authors": "D Buckingham, S Bragg",
+            "paper_citedby": "69",
+            "paper_year": "2003"
+        },
+        {
+            "paper_title": "Consulting young people: A literature review",
+            "paper_authors": "S Bragg",
+            "paper_citedby": "66",
+            "paper_year": "2010"
+        },
+        {
+            "paper_title": "Sexualised goods aimed at children: a report to the Scottish Parliament Equal Opportunities Committee",
+            "paper_authors": "D Buckingham, R Willett, S Bragg, R Russell",
+            "paper_citedby": "59",
+            "paper_year": "2010"
+        },
+        {
+            "paper_title": "Young people and sexual content on television",
+            "paper_authors": "S Bragg, D Buckingham",
+            "paper_citedby": "56",
+            "paper_year": "2002"
+        },
+        {
+            "paper_title": "\u2018Now it\u2019s up to us to interpret it\u2019: Youth voice and visual methods in creative learning and research",
+            "paper_authors": "S Bragg",
+            "paper_citedby": "55",
+            "paper_year": "2010"
+        },
+        {
+            "paper_title": "Global concerns, local negotiations and moral selves: Contemporary parenting and the \u201csexualisation of childhood\u201d debate",
+            "paper_authors": "S Bragg, D Buckingham",
+            "paper_citedby": "53",
+            "paper_year": "2013"
+        },
+        {
+            "paper_title": "\u2018Having a Real Debate\u2019: using media as a resource in sex education",
+            "paper_authors": "S Bragg",
+            "paper_citedby": "53",
+            "paper_year": "2006"
+        }
+    ]
+}

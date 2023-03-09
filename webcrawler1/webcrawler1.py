@@ -14,7 +14,7 @@ def scrapeURL(URL, maxdepth, rewrite, verbose, depth=0):
     H = blake2b(bytes(URL, encoding='utf-8')).hexdigest()
 
     # check if H.txt exists (H is the hash of the URL)
-    if(os.path.isfile(H + ".txt") and not rewrite):
+    if(os.path.isfile("pages/" + H + ".txt") and not rewrite):
         # File exists, however we do not want to rewrite it so we will return
         print("File already exists")
         return
@@ -58,7 +58,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Web scraper for a Google Scholar page.')
     parser.add_argument("URL", type=str, help="The researcher URL to start crawling from")
     parser.add_argument("-d", "--maxdepth", help="Maximum number of depths to crawl from initialURL.", default=3, type=int)
-    parser.add_argument("-r", "--rewrite", help="if value is True and file H.txt exists for current URL, it re-download and re-write URL. Otherwise, skips step 2-5. Default value is False.", action="store_true", default=False)
+    parser.add_argument("-r", "--rewrite", help="If True while the file H.txt exists for the current URL re-download and re-write the file. Default value is False.", action="store_true", default=False)
     parser.add_argument("-v", "--verbose", help="if True, print <URL,depth> on the screen. Default value is False.", action="store_true", default=False)
     args = parser.parse_args()
     print("Scraping " + args.URL + " with a max depth of:", args.maxdepth)
