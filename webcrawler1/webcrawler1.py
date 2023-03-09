@@ -20,7 +20,7 @@ def scrapeURL(URL, maxdepth, rewrite, verbose, depth=0):
         return
 
     # either the file does not exist or we want to rewrite it so we will continue to scraping the URL
-
+    
     # try to get the page / URL to scrape
     try:
         page = requests.get(URL)
@@ -55,8 +55,8 @@ def scrapeURL(URL, maxdepth, rewrite, verbose, depth=0):
     
 if __name__ == "__main__":
     
-    parser = argparse.ArgumentParser(description='Web scraper for a given URL.')
-    parser.add_argument("-url", "--URL", help="Supplies the URL to scrape", required=True)
+    parser = argparse.ArgumentParser(description='Web scraper for a Google Scholar page.')
+    parser.add_argument("URL", type=str, help="The researcher URL to start crawling from")
     parser.add_argument("-d", "--maxdepth", help="Maximum number of depths to crawl from initialURL.", default=3, type=int)
     parser.add_argument("-r", "--rewrite", help="if value is True and file H.txt exists for current URL, it re-download and re-write URL. Otherwise, skips step 2-5. Default value is False.", action="store_true", default=False)
     parser.add_argument("-v", "--verbose", help="if True, print <URL,depth> on the screen. Default value is False.", action="store_true", default=False)
