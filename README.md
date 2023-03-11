@@ -53,7 +53,7 @@ Downloads content from a given URL and uses a function to find the approximate l
 
 ### Options
 `URL`
-  - The researcher URL to crawl.
+  - The URL to crawl.
 
 `-r`, `--rewrite`
   - If True while the file H.txt exists for the current URL, re-download and re-write the file. Default value is False.
