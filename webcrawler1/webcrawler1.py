@@ -16,7 +16,7 @@ def scrapeURL(URL, maxdepth, rewrite, verbose, depth=0):
     # check if H.txt exists (H is the hash of the URL)
     if(os.path.isfile("pages/" + H + ".txt") and not rewrite):
         # File exists, however we do not want to rewrite it so we will return
-        print("File already exists")
+        # print("File already exists")
         return
 
     # either the file does not exist or we want to rewrite it so we will continue to scraping the URL
@@ -56,7 +56,7 @@ def scrapeURL(URL, maxdepth, rewrite, verbose, depth=0):
 if __name__ == "__main__":
     
     parser = argparse.ArgumentParser(description='Web scraper for a Google Scholar page.')
-    parser.add_argument("URL", type=str, help="The researcher URL to start crawling from")
+    parser.add_argument("URL", type=str, help="The initial URL to start crawling from")
     parser.add_argument("-d", "--maxdepth", help="Maximum number of depths to crawl from initialURL.", default=3, type=int)
     parser.add_argument("-r", "--rewrite", help="If True while the file H.txt exists for the current URL re-download and re-write the file. Default value is False.", action="store_true", default=False)
     parser.add_argument("-v", "--verbose", help="if True, print <URL,depth> on the screen. Default value is False.", action="store_true", default=False)

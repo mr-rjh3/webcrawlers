@@ -1,19 +1,17 @@
 import argparse
 import json
 import os.path
-import random
 import time
 import requests
-from datetime import datetime
 from bs4 import BeautifulSoup
 from hashlib import blake2b
 
-def scrapeURL(URL, rewrite, verbose):
+def scrapeURL(URL, rewrite, bypass):
     # Find the hash of the URL
     H = blake2b(bytes(URL, encoding='utf-8')).hexdigest()
 
     # check if H.txt does not exist or we wish to rewrite it (H is the hash of the URL)
-    if(not os.path.isfile("pages/" + H + ".txt") or rewrite):
+    if(not bypass and not os.path.isfile("pages/" + H + ".txt") or rewrite):
         # Scrape the URL and save it to H.txt
         print("Scraping URL: ", URL)
          # try to get the page / URL to scrape
@@ -43,11 +41,15 @@ def scrapeURL(URL, rewrite, verbose):
             f.write(page.text)
 
     # Initialize the BeautifulSoup object from our H.txt file
-    with open("pages/"+ H + ".txt", "r", encoding="utf-8") as f:
-        soup = BeautifulSoup(bytes(f.read(), encoding="utf-8"), "html.parser")
+    if(bypass): 
+        with open("pages/Google_Scholar.html", "r", encoding="utf-8") as f:
+            soup = BeautifulSoup(bytes(f.read(), encoding="utf-8"), "html.parser")
+    else:
+        with open("pages/"+ H + ".txt", "r", encoding="utf-8") as f:
+            soup = BeautifulSoup(bytes(f.read(), encoding="utf-8"), "html.parser")
 
     researcher = {}
-
+    researcher["researcher_link"] = URL
     # Extract researcher name and their URLs from the page
     name = soup.find("div", {"id": "gsc_prf_in"}).text
     researcher["researcher_name"] = name
@@ -118,6 +120,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Web scraper for a Google Scholar page.')
     parser.add_argument("URL", type=str, help="The researcher URL to start crawling from")
     parser.add_argument("-r", "--rewrite", help="If True and the file H.txt exists for the current URL re-download and re-write the file. Default value is False.", action="store_true", default=False)
+    parser.add_argument("-b", "--bypass", help="Google Scholar has strict webcrawling protections, this program may be prevented to crawl the page due to this. As a way to bypass this you can use this flag to read from a downloaded HTML file instead. Please note that a URL will still be required for hashing purposes. Ensure the file is saved in the 'pages' folder and named 'Google_Scholar.html'. Default value is False", action="store_true", default=False)
     args = parser.parse_args()
     print("Scraping " + args.URL + "...")
-    scrapeURL(args.URL, args.rewrite, args.verbose)
+    scrapeURL(args.URL, args.rewrite, args.bypass)
