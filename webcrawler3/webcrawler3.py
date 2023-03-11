@@ -118,8 +118,8 @@ def scrapeURL(URL, rewrite, plot):
 
 if __name__ == "__main__":
     
-    parser = argparse.ArgumentParser(description='Web scraper for a Google Scholar page.')
-    parser.add_argument("URL", type=str, help="The researcher URL to start crawling from")
+    parser = argparse.ArgumentParser(description='Web scraper that finds the approximate location of the start and end of the content within an HTML page.')
+    parser.add_argument("URL", type=str, help="The URL to crawl.")
     parser.add_argument("-r", "--rewrite", help="If True and the file H.txt exists for the current URL re-download and re-write the file. Default value is False.", action="store_true", default=False)
     parser.add_argument("-p", "--plot", help="If True the program will open an interactive 3d Scatter plot and 2d Heatmap in your default browser. Default value is False.", action="store_true", default=False)
     args = parser.parse_args()
