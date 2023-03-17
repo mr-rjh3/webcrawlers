@@ -9,7 +9,7 @@ Extracts all links from a given URL and extracts all links from those URLs as we
 
 ### Usage
 1. cd to ./webcrawler1 `cd webcrawler1`
-2. Run `pip -r requirements.txt`
+2. Run `pip install -r requirements.txt`
 3. Run `python ./webcrawlerX.py URL [-OPTIONS]`
 
 ### Options
@@ -30,7 +30,7 @@ Downloads content from a given Google Scholar profile and stores data to a uniqu
 
 ### Usage
 1. cd to ./webcrawler2 `cd webcrawler2`
-2. Run `pip -r requirements.txt`
+2. Run `pip install -r requirements.txt`
 3. Run `python ./webcrawler2.py URL [-OPTIONS]`
 
 ### Options
@@ -48,7 +48,7 @@ Downloads content from a given URL and uses a function to find the approximate l
 
 ### Usage
 1. cd to ./webcrawler3 `cd webcrawler3`
-2. Run `pip -r requirements.txt`
+2. Run `pip install -r requirements.txt`
 3. Run `python ./webcrawler3.py URL [-OPTIONS]`
 
 ### Options
